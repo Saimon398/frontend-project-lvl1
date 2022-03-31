@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Исполняемый скрипт 
+// Исполняемый скрипт
 
 import introduceUser from '../src/cli.js';
 
