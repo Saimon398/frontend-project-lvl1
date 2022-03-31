@@ -14,7 +14,6 @@ export const isEven = () => {
   const number = generateRandomNum();
   const result = (number % 2 === 0) ? 'yes' : 'no';
   return [result, number];
-}
+};
 
 export const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
-
