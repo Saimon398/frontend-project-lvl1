@@ -1,5 +1,7 @@
 // Правила и генератор раунда
 
+import _ from 'lodash';
+
 /**
  * Функция генерирует случайное число от 1 до 100
  * @returns {number} Случайное число
@@ -28,12 +30,7 @@ export const findDivisor = (number) => {
 export const findGreatestDivisor = () => {
   const first = generateRandomNum();
   const second = generateRandomNum();
-  const result = [];
-  for (const div of findDivisor(first)) {
-    if (findDivisor(second).includes(div)) {
-      result.push(div);
-    }
-  }
+  const result = _.intersection(findDivisor(first), findDivisor(second));
   return [String(result[result.length - 1]), `${first} ${second}`];
 };
 
