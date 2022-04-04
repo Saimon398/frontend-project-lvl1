@@ -9,7 +9,7 @@ export const generateRandomNum = (limit) => Math.ceil(Math.random() * limit);
 export const generateProgression = () => {
   let progression = [];
   const start = generateRandomNum(3);
-  const step = generateRandomNum(3);
+  const step = generateRandomNum(2);
   for (let i = start; i <= 12; i += step) {
     progression.push(i);
   }
